@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper open--menu">
+            <div class="page-header__open">
+                <button class="header__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <span class="header__button--text">Меню</span>
+            </div>
+            <img src="img/logo.png" class="logo__image" alt="Lotos" width="40" height="25">
+            <p class="page-header__phone">+7 (812) 345-56-97</p>
+            <ul class="footer-social footer-social--header">
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Vk</a>
+                </li>
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Fb</a>
+                </li>
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Inst</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="main-nav nav--close">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#main" class="main-nav__item">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#newbie" class="main-nav__item">Направления</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#teachers" class="main-nav__item">Преподаватели</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#price" class="main-nav__item">Абонементы</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#schedule" class="main-nav__item">Расписание</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#reviews" class="main-nav__item">Отзывы</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#contact" class="main-nav__item">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main" id='fullpage'>
+        <section class="test pages section" id="main">
+            <picture>
+                <source media="(min-width: 1279px)" srcset="img/test-desktop.png">
+                <source media="(min-width: 749px)" srcset="img/test-tablet.png">
+                <img src="img/test-mobile.png" class="test__picture" alt="Занятия йогой" width="201" height="300">
+            </picture>
+            <div class="test__text-wrap">
+                <div class="test__title-wrap">
+                    <h1 class="test__title">Lotos <span class="test__additional">Центр йоги</span></h1>
+                    <button class="footer__button button--test" type="button"></button>
+                </div>
+                <div class="test__wrap">
+                    <a href="#discount" class="test__button"><span class="visually-hidden">Дополнительно</span></a>
+                    <p class="test__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+                </div>
+            </div>
+        </section>
+        <section class="newbie pages section" id="newbie">
+            <div class="newbie__wrap">
+                <div class="newbie__slider">
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Для начинающих</span>
+                        <p class="newbie__text">Йога для начинающих рассчитана на тех, кто до этого никогда ей не занимался и
+                            требует обучения. Такой программный комплекс существует и в нашем центре.</p>
+                        <p class="newbie__text">Мы предлагаем посетить бесплатное вводное занятие, чтобы узнать, почему так много людей занимаются йогой
+                            и придерживаются здорового образа жизни.</p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Аштанга Виньяса</span>
+                        <p class="newbie__text"> Аштанга-виньяса-йогу рекомендуют людям с хорошей физической подготовкой,
+                            поскольку упражнения требуют достаточной гибкости, растяжки и силы. В процесс вовлекаются
+                            практически все мышцы тела, активизируется кровообращение. За счет мощного потоотделения из
+                            организма выводятся токсины.</p>
+                        <p class="newbie__text">Комплексное занятие включает асаны и виньясы, соединяющие позы в единый
+                            комплекс. Особенное внимание уделяется дыханию и концентрации внимания.</p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Универсальная</span>
+                        <p class="newbie__text">Универсальная Йога – это полная система Йоги, которая даёт понимание
+                            практики от начального уровня до конечной реализации. В основе Универсальной Йоги лежит знание
+                            природы оболочек человеческого существа и ключевых законов преобразования этих оболочек.</p>
+                        <p class="newbie__text">Методы Универсальной Йоги призваны помочь достичь равновесия на уровне
+                            каждой оболочки. Конечным состоянием Универсальной Йоги является достижение состояния
+                            Единства.</p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Кундалини</span>
+                        <p class="newbie__text">Основополагающие кундалини йога – медитации, мантры, асаны и пранаяма.
+                            Занятия для начинающих и продвинутых практиков разделяются на несколько специальных сетов,
+                            длительностью по 10-15 минут.</p>
+                        <p class="newbie__text">После практических занятий человек ощущает невероятный прилив сил и душевный
+                            подъем. В конце сеанса проводятся упражнения, направленные на расслабление, приносящее особую
+                            пользу для всего организма.</p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Айенгара</span>
+                        <p class="newbie__text">Йога Айенгара - одно из самых популярных направлений йоги. Техника
+                            выполнения асан основана на уравнивании правой и левой частей тела относительно осевой линии,
+                            вытяжении и создании пространства в суставах и тканях тела.</p>
+                        <p class="newbie__text">Йога Айенгара подходит людям с любым уровнем физической подготовки, так как
+                            все асаны адаптируются благодаря использованию вспомогательных материалов. </p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <h1 class="newbie__title">Yoga - </h1><span class="newbie__title--small">Терапия</span>
+                        <p class="newbie__text">Особая практика, сочетающая в себе разные направления йоги. Основная задача
+                            йогатерапии - привести в порядок тело. Главный упор делается на оздоровление, на понимание того,
+                            что конкретно происходит с организмом при выполнении того или иного комплекса. </p>
+                        <p class="newbie__text">Отличительное свойство йогатерапии - осторожность и бережное отношение к
+                            позвоночнику и суставам.</p>
+                        <div class="newbie__button-wrap button-wrap">
+                            <a href="#discount" class="newbie__button button">Записаться онлайн</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-title">
+                    <ul class="title__list newbie__list">
+                        <li class="title__item newbie__item active">Для начинающих</li>
+                        <li class="title__item newbie__item">Аштанга Виньяса</li>
+                        <li class="title__item newbie__item">Универсальная</li>
+                        <li class="title__item newbie__item">Кундалини</li>
+                        <li class="title__item newbie__item">Айенгара</li>
+                        <li class="title__item newbie__item">Терапия</li>
+                    </ul>
+                    <img class="slider__image" src="img/slider-image.png" width="213" height="500">
+                </div>
+            </div>
+        </section>
+        <section class="discount pages section" id="discount">
+            <div class="discount__wrap">
+                <h1 class="discount__title"><span class="discount__title--large">10% </span>cкидка на абонемент</h1>
+                <p class="discount__text">Мы сделаем для вас 10% скидку
+                    на абонемент, купленный в день посещения вводного занятия.</p>
+                <form class="discount__form">
+                    <input class="discount__input" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="discount__input" type="tel" name="tel" placeholder="Ваш телефон" required>
+                    <div class="discount__button-wrap button-wrap">
+                        <button class="discount__button button" type="submit">Отправить заявку</button>
+                        <button class="discount__button--mail button--add" type="button"><span
+                                class="visually-hidden">Письмо</span>
+                        </button>
+                    </div>
+                </form>
+                <p class="discount__additional">Нажимая «Отправить заявку», вы даете <span
+                        class="discount__additional--decor">согласие</span> на обработку своих
+                    персональных данных</p>
+            </div>
+            <picture>
+                <source media="(min-width: 1279px)" srcset="img/discount-desktop.png">
+                <img class="discount__image" src="img/discount-image.png" width="295" height="400">
+            </picture>
+        </section>
+        <section class="teacher pages section" id="teachers">
+            <div class="teacher__wrap">
+                <div class="teacher__image-wrap">
+                    <ul class="title__list teacher__list">
+                        <li class="title__item teacher__item active">Максим Казаков</li>
+                        <li class="title__item teacher__item">Юлия Зырянова</li>
+                        <li class="title__item teacher__item">Настя Антипова</li>
+                        <li class="title__item teacher__item">Ольга Ветрова</li>
+                        <li class="title__item teacher__item">Катя Стреженова</li>
+                        <li class="title__item teacher__item">Мария Жукова</li>
+                    </ul>
+                    <img src="img/teacher-1.png" class="teacher__picture teacher__picture-1 teacher__picture--toggle" alt="Занятия йогой" width="231" height="500">
+                    <img src="img/teacher-2.png" class="teacher__picture teacher__picture-2 teacher__picture--toggle" alt="Занятия йогой" width="219" height="489">
+                    <img src="img/teacher-3.png" class="teacher__picture teacher__picture-3 teacher__picture--toggle" alt="Занятия йогой" width="231" height="500">
+                    <img src="img/teacher-4.png" class="teacher__picture teacher__picture-4 teacher__picture--toggle" alt="Занятия йогой" width="321" height="410">
+                    <img src="img/teacher-5.png" class="teacher__picture teacher__picture-5 teacher__picture--toggle" alt="Занятия йогой" width="231" height="500">
+                    <img src="img/teacher-6.png" class="teacher__picture teacher__picture-6 teacher__picture--toggle" alt="Занятия йогой" width="148" height="300">
+                </div>
+                <div class="teacher__slider">
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-1.png" class="teacher__picture teacher__picture-1 teacher__picture--slider" alt="Занятия йогой" width="231" height="500">
+                        <h2 class="teacher__title">Максим Казаков</h2>
+                        <p class="teacher__additional">Преподаватель йоги с 1997 года</p>
+                        <div class="overflow-wrapper">
+                            <p class="teacher__text">Занимается йогой Айенгара с 1990 года. Является преподавателем йоги Айенгара с 1997
+                                года. Имеет международный сертификат Junior I. Проводит семинары, занятия разных уровней сложностей.</p>
+                            <p class="teacher__text">В йогу привел интерес. Является одним из самых опытных преподавателей и опорой нашего центра. Все студенты любят Максима за отзывчивость
+                                и индивидуальный подход к каждому.</p>
+                        </div>
+                        <div class="teacher__button-wrap button-wrap">
+                            <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-2.png" class="teacher__picture teacher__picture-2 teacher__picture--slider" alt="Занятия йогой" width="219" height="489">
+                        <h2 class="teacher__title">Юлия Зырянова</h2>
+                        <p class="teacher__additional">Преподаватель йоги с 2005 года</p>
+                        <div class="overflow-wrapper">
+                            <p class="teacher__text">Специалист по гармоничному физическому развитию детей, имеющий за
+                                плечами
+                                30 лет опыта в спортивной педагогике. Главный тренер клуба «Lotos».
+                            </p>
+                            <p class="teacher__text">Юлия обладает черным поясом 6 дан по Косики каратэ, является мастером
+                                спорта России.</p>
+                        </div>
+                        <div class="teacher__button-wrap button-wrap">
+                            <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-3.png" class="teacher__picture teacher__picture-3 teacher__picture--slider" alt="Занятия йогой" width="231" height="500">
+                        <h2 class="teacher__title">Настя Антипова</h2>
+                        <p class="teacher__additional">Преподаватель йоги с 2000 года</p>
+                        <div class="overflow-wrapper">
+                            <p class="teacher__text">Сертифицированный инструктор по Ишвара-йоге, прошла обучение в Patanjali
+                                International Yoga Foundation (г. Ришикеш, Индия), на курсе для преподавателей в центре йоги
+                                «Прана», а также различных конференциях, семинарах и ретритах.</p>
+                            <p class="teacher__text">Презентор международной конвенции
+                                MIOFF. Опыт преподавания йоги – более 12 лет.</p>
+                        </div>
+                        <div class="teacher__button-wrap button-wrap">
+                            <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-4.png" class="teacher__picture teacher__picture-4 teacher__picture--slider" alt="Занятия йогой" width="321" height="410">
+                        <h2 class="teacher__title">Ольга Ветрова</h2>
+                        <p class="teacher__additional">Преподаватель йоги с 2001 года</p>
+                        <div class="overflow-wrapper">
+                            <p class="teacher__text">Инструктор хатха-йоги. В своей практике преподавания использую
+                                классические асаны и принцип «не навреди».Окончила курс для преподавателей классической
+                                хатха-йоги и имею также сертификаты по дополнительному образованию «Философия йоги»,
+                                сертифицированный инструктор по йога-нидре.</p>
+                            <p class="teacher__text">Всегда стараюсь найти общий язык с каждым из
+                            занимающихся, создать приятную атмосферу для комфортной практики. Ом</p>
+                        </div>
+                        <div class="teacher__button-wrap button-wrap">
+                            <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-5.png" class="teacher__picture teacher__picture-5 teacher__picture--slider" alt="Занятия йогой" width="231" height="500">
+                        <h2 class="teacher__title">Катя Стреженова</h2>
+                        <p class="teacher__additional">Преподаватель йоги с 2015 года</p>
+                        <div class="overflow-wrapper">
+                            <p class="teacher__text">Сертифицированный инструктор по хатха-йоге.
+                                Прошла обучение на преподавателя йоги групповых программ в г. Москве, клуб OUM.RU, внесена в
+                                международный реестр сертифицированных инструкторов хатха-йоги.
+                                Участница йога-лагерей «АУРА» в Абхазии и Ярославской области.</p>
+                            <p class="teacher__text">Принимала участие в йога-турах и йога-походах «По горам Кавказа».
+                                Проводит занятия по хатха-йоге и лекции на йогические темы.</p>
+                        </div>
+                        <div class="teacher__button-wrap button-wrap">
+                            <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teacher__text-wrap">
+                        <img src="img/teacher-6.png" class="teacher__picture teacher__picture-6 teacher__picture--slider" alt="Занятия йогой" width="148" height="300">
+                        <h2 class="teacher__title">Мария Жукова</h2>
+                    <p class="teacher__additional">Преподаватель йоги с 2012 года</p>
+                    <div class="overflow-wrapper">
+                        <p class="teacher__text">Йога вошла в мою жизнь более шести лет назад и первые три года думала,
+                            что я занимаюсь йогой, но потом поняла, что йога занималась мной))
+                            Теперь йога — это мой образ жизни!</p>
+                        <p class="teacher__text">Основа философии йоги проста: Измени себя — изменится мир вокруг. До
+                            встречи на занятиях</p>
+                    </div>
+                    <div class="teacher__button-wrap button-wrap">
+                        <a href="#discount" class="teacher__button button">Записаться к тенеру</a>
+                        <button class="button--plus button--add" type="button"><span
+                                class="visually-hidden">Дополнительно</span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="price pages section" id="price">
+            <div class="price___wrap">
+                <table class="price__table">
+                    <tr>
+                        <td class="price__cell">Разовое занятие<br><span class="price__cell--number">300<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                        <td class="price__cell">Месяц занятий<br><span class="price__cell--number">2 000<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price__cell">2 месяца занятий<br><span class="price__cell--number">3 500<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                        <td class="price__cell">3 месяца занятий<br><span class="price__cell--number">4 500<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="price__cell">Пол года занятий<br><span class="price__cell--number">8 000<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                        <td class="price__cell">Год занятий<br><span class="price__cell--number">14 000<span
+                                class="price__cell--mini"> руб.</span></span>
+                            <button class="price__cell--plus" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="price__button-wrap button-wrap">
+                    <a href="#discount" class="price__button button">Заказать абонемент</a>
+                    <button class="price__button--check button--add" type="button"><span
+                            class="visually-hidden">Дополнительно</span>
+                    </button>
+                </div>
+            </div>
+            <img class="price__image" src="img/price-background.png" width="334" height="500">
+        </section>
+        <section class="schedule pages section" id="schedule">
+            <table class="schedule__table">
+                <thead class="schedule__head">
+                    <tr>
+                        <td class="schedule__cell">
+                            <button class="schedule__cell--save" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                            Скачать расписание
+                        </td>
+                        <td class="schedule__cell">08:00 - 09:25</td>
+                        <td class="schedule__cell">09:30 - 10:55</td>
+                        <td class="schedule__cell">11:00 - 12:25</td>
+                        <td class="schedule__cell">13:30 - 14:55</td>
+                        <td class="schedule__cell">15:00 - 16:25</td>
+                        <td class="schedule__cell">17:00 - 18:25</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="schedule__cell">Понедельник</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Вторник</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Среда</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Четверг</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Пятница</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Суббота</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                </tr>
+                <tr>
+                    <td class="schedule__cell">Восресенье</td>
+                    <td class="schedule__cell">Йога для начинающих</td>
+                    <td class="schedule__cell">Универсальная йога</td>
+                    <td class="schedule__cell">Йога Айенгара</td>
+                    <td class="schedule__cell">Аштанга Виньяса йога</td>
+                    <td class="schedule__cell">Йогатерапия</td>
+                    <td class="schedule__cell">Кундалини йога</td>
+                </tr>
+            </table>
+        </section>
+        <section class="reviews pages section" id="reviews">
+            <div class="reviews__wrap">
+                <div class="reviews__slider">
+                    <div class="reviews__client">
+                        <div class="reviews__info">
+                            <img class="reviews__image" src="img/reviews-photo-1.jpg" width="160" height="160" alt="Арина Наумова">
+                            <div>
+                                <h3 class="reviews__caption">Жанна Блиц</h3>
+                                <span class="reviews__age">23 года</span>
+                            </div>
+                        </div>
+                        <div class="overflow-wrapper">
+                            <p class="reviews__text">Мне йога позволила доказать, что возможности тела безграничны.
+                                После рождения сына, вопрос физического состояния встал особенно остро. Решать его необходимо
+                                было мягкими способами, с учетом возможностей при ГВ.</p>
+                            <p class="reviews__text">Рассмотрев варианты, пришла на занятия в
+                                студию йоги. Асаны, естественно, дались ни с первого и даже не со второго занятия! Здесь
+                            главное - практика под чутким руководством учителя.</p>
+                        </div>
+                        <div class="reviews__button-wrap button-wrap">
+                            <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reviews__client">
+                        <div class="reviews__info">
+                            <img class="reviews__image" src="img/reviews-photo-2.jpg" width="160" height="160" alt="Арина Наумова">
+                            <div>
+                                <h3 class="reviews__caption">Арина Наумова</h3>
+                                <span class="reviews__age">34 года</span>
+                            </div>
+                        </div>
+                        <div class="overflow-wrapper">
+                            <p class="reviews__text">Не знаю, как остальные, но после занятий йогой хочется начать новую здоровую жизнь,
+                                хочется поесть овощей и фруктов и поднять свой иммунитет. Теперь для меня день занятий йогой — это день
+                                здоровья.</p>
+                            <p class="reviews__text">После упорных занятий я стала меньше болеть, и поняла,
+                            в чем смысл всех упражнений. Позы получаются элегантно,  и не больно только тогда, когда не прилагаешь усилия,
+                            а остаёшься расслабленным на протяжении всего урока.</p>
+                        </div>
+                        <div class="reviews__button-wrap button-wrap">
+                            <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reviews__client">
+                        <div class="reviews__info">
+                            <img class="reviews__image" src="img/reviews-photo-3.jpg" width="160" height="160" alt="Арина Наумова">
+                            <div>
+                                <h3 class="reviews__caption">Виталий Коробко</h3>
+                                <span class="reviews__age">27 лет</span>
+                            </div>
+                        </div>
+                        <div class="overflow-wrapper">
+                            <p class="reviews__text">Занимаюсь в студии полгода, в среднем два раза в неделю. Поначалу было
+                                тяжело: тело было не готово к нагрузкам. Но со временем втянулся, хотя иногда все еще задаю себе
+                                вопрос - "зачем мне это нужно, лучше бы поспал утром лишних два часа, чем истязать себя
+                                нагрузками"</p>
+                            <p class="reviews__text">Я продолжаю думать об этом, делая трудных для меня "кузнечиков", где
+                            приходится просто терпеть, но тут вступает воля и мотивация. Мотивация имеется - поддержание
+                            физического и душевного здоровья.</p>
+                        </div>
+                        <div class="reviews__button-wrap button-wrap">
+                            <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reviews__client">
+                        <div class="reviews__info">
+                            <img class="reviews__image" src="img/reviews-photo-4.jpg" width="160" height="160" alt="Арина Наумова">
+                            <div>
+                                <h3 class="reviews__caption">Елена Снежная</h3>
+                                <span class="reviews__age">27 лет</span>
+                            </div>
+                        </div>
+                        <div class="overflow-wrapper">
+                            <p class="reviews__text">"Хотела поблагодарить судьбу за то, что я совершенно случайно (за компанию)
+                                попала на занятие йогой в студию и не захотела бросать занятия потому, что получаю большой заряд
+                                бодрости и позитива.</p>
+                            <p class="reviews__text">Занимаюсь йогой с марта 2016 года и чувствую, как укрепляется здоровье и
+                            прибавляется, нет, не вес, оптимизм и это несмотря на солидный возраст.</p>
+                        </div>
+                        <div class="reviews__button-wrap button-wrap">
+                            <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                            <button class="button--plus button--add" type="button"><span
+                                    class="visually-hidden">Дополнительно</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reviews__client">
+                    <div class="reviews__info">
+                        <img class="reviews__image" src="img/reviews-photo-5.jpg" width="160" height="160" alt="Арина Наумова">
+                        <div>
+                            <h3 class="reviews__caption">Юлиана Ветрова</h3>
+                            <span class="reviews__age">22 года</span>
+                        </div>
+                    </div>
+                    <div class="overflow-wrapper">
+                        <p class="reviews__text">Асаны пока мне даются с большим трудом. Но под руководством опытных и
+                            квалифицированных инструкторов студии йоги занятия приносят свои плоды. Потихоньку укрепляется
+                            пресс, подтягиваются ягодицы, оздоравливается весь организм.</p>
+                        <p class="reviews__text">Занятия йогой помогают избавиться от стрессов и депрессии, которые окружают
+                        нас в повседневной жизни. Я полностью убеждена, что каждый человек может найти в занятиях йогой
+                        максимальную пользу для своего организма.</p>
+                    </div>
+                    <div class="reviews__button-wrap button-wrap">
+                        <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                        <button class="button--plus button--add" type="button"><span
+                                class="visually-hidden">Дополнительно</span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <div class="reviews-title">
+                    <ul class="title__list reviews__list">
+                        <li class="title__item reviews__item">Жанна Блиц</li>
+                        <li class="title__item reviews__item active">Арина Наумова</li>
+                        <li class="title__item reviews__item">Виталий Коробко</li>
+                        <li class="title__item reviews__item">Елена Снежная</li>
+                        <li class="title__item reviews__item">Юлиана Ветрова</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="discount discount--second pages section">
+            <div class="discount__wrap">
+                <h1 class="discount__title"><span class="discount__title--large">10% </span>cкидка на абонемент</h1>
+                <p class="discount__text">Хотите скидку на абонемент? Приведите с собой друзей и получите -10% за каждого пришедшего</p>
+                <form class="discount__form">
+                    <input class="discount__input" type="text" name="name" placeholder="Ваше имя" required>
+                    <input class="discount__input" type="tel" name="tel" placeholder="Ваш телефон" required>
+                    <div class="discount__button-wrap button-wrap">
+                        <a href="#discount" class="reviews__button button">Попробовать тоже</a>
+                        <button class="discount__button--mail button--add" type="button"><span
+                                class="visually-hidden">Письмо</span>
+                        </button>
+                    </div>
+                </form>
+                <p class="discount__additional">Нажимая «Отправить заявку», вы даете <span
+                        class="discount__additional--decor">согласие</span> на обработку своих
+                    персональных данных</p>
+            </div>
+            <picture>
+                <source media="(min-width: 1279px)" srcset="img/discount-desktop-2.png">
+                <img class="discount__image-friends" src="img/discount-image-2.png" width="279" height="500">
+            </picture>
+        </section>
+        <section class="contact pages section" id="contact">
+            <div class="contact__picture">
+                <div class="contact__map" id='map'></div>
+            </div>
+            <div class="contact__wrap">
+                <p class="contact__info">Адрес: <span
+                        class="contact__info--additional"><br>СПб, Невский проспект 108</span></p>
+                <p class="contact__info">Email: <span class="contact__info--additional"><br>Lotos-yoga@gmail.com</span>
+                </p>
+                <div class="contact__link-wrap contact__link-location">
+                    <div class="contact__add-img contact__add-location"><span
+                            class="visually-hidden">Положение на карте</span></div>
+                    <p class="contact__link">Смотреть на карте</p>
+                </div>
+                <div class="contact__link-wrap">
+                    <div class="contact__add-img contact__add-envelope"><span
+                            class="visually-hidden">Обратная связь</span></div>
+                    <p class="contact__link">Оставить отзыв</p>
+                </div>
+                <p class="contact__copyright">© 2018 — ООО “Центр йоги Лотос”</p>
+                <div class="contact__button-wrap button-wrap">
+                    <button class="contact__button button" type="button">Записаться онлайн</button>
+                    <button class="button--add button--plus" type="button"><span
+                            class="visually-hidden">Дополнительно</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-header__phone page-header__phone--footer">+7 (812) 345-56-97</p>
+            <div class="footer__number">
+                <span class="current-page">01</span>
+                <span class="all-page">- 09</span>
+            </div>
+            <ul class="footer-social">
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Vk</a>
+                </li>
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Fb</a>
+                </li>
+                <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://vk.com/id109031198">Inst</a>
+                </li>
+            </ul>
+            <div class="next-page">
+                <span id="next-section-name">Направления и классы</span>
+                <button class="footer__button" type="button"></button>
+            </div>
+        </div>
+    </footer>
+    <div class="popup__wrap hide"></div>
+    <popup class="thank hide">
+        <h3 class="thank__title">Спасибо!</h3>
+        <p class="thank__text">Мы свяжемся с вами в течении 15 секунд...</p>
+    </popup>
+    <popup class="popup__feedback hide">
+        <button class="feedback__close" type="button">Закрыть</button>
+        <h3 class="feedback__title">Для нас очень важно ваше мнение</h3>
+        <form class="feedback__form">
+            <input class="feedback__input" type="text" name="name" placeholder="Ваше имя" required>
+            <textarea class="feedback__area" row="4" placeholder="Ваш отзыв"></textarea>
+            <div class="feedback__button-wrap button-wrap">
+                <button class="feedback__button button" type="submit">Отправить отзыв</button>
+                <button class="feedback__button--mail button--add" type="button"><span
+                        class="visually-hidden">Письмо</span>
+                </button>
+            </div>
+        </form>
+        <p class="feedback__additional">Нажимая «Отправить заявку», вы даете <span
+                class="discount__additional--decor">согласие</span> на обработку своих
+            персональных данных</p>
+    </popup>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider-mobile.js"></script>
+    <script src="js/picturefill.min.js"></script>
+</body>
+</html>
